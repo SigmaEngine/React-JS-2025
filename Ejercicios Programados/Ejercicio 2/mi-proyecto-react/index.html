@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi App React</title>
+    <style>
+    .btn {
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #45a049;
+    }
+  </style>
+  </head> 
+  <body>
+    <button class="btn" id="miBoton">Haz clic aquí</button>
+    <script>
+    const boton = document.getElementById("miBoton");
+    boton.addEventListener("click", () => {
+      alert("¡Hola Señor o Señorita! Hiciste clic en el botón, has descubierto el saludo personalizado.");
+    });
+    </script>
+    <!-- React se monta acá -->
+    <div id="root"></div>
+    <!-- El script de entrada de React -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
