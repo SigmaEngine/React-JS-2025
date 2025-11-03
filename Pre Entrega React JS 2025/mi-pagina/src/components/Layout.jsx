@@ -5,6 +5,13 @@ import Navbar from './Navbar'
 export default function Layout() {
   return (
     <div>
+      style={{
+    backgroundImage: `url('/src/assets/fondo.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+  }}
+  {children}
       <Navbar />
       <main style={{ padding: 16 }}>
         <Outlet />
