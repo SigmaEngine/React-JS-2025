@@ -71,3 +71,15 @@ main {
 padding: 20px;
 min-height: 80vh;
 }
+
+/* ======== FONDO ======== */
+body {
+  margin: 0;
+  background-image: url('./assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
